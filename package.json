@@ -2,8 +2,8 @@
   "name": "ebl-website",
   "version": "1.0.0",
   "private": true,
-  "description": "ebl-website",
-  "author": "stevekim72",
+  "description": "English Book Ladder website",
+  "author": "Steve Kim <me@stevekimdev.com>",
   "keywords": [
     "gatsby"
   ],
