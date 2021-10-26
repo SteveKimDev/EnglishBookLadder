@@ -1,14 +1,58 @@
 @charset "UTF-8";
 
-/* Google Fonts import */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- */
-
+/* Custom CSS */
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   color: #4f5663;
   background-color: #ffffff;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mb-1rem {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer-section {
+  color: #ffffff;
+  background-color: #fd7062;
+  margin-top: 50px;
+  padding: 50px 50px 25px;
+}
+
+.footer-row1 {
+  margin-bottom: 50px;
+}
+
+.footer-col {
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  .footer-col {
+    text-align: center;
+    padding-left: 0;
+  }
+  .footer-col2,
+  .footer-col3 {
+    margin-top: 50px;
+  }
 }
