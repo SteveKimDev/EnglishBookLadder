@@ -1,21 +1,24 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://englishbookladder.com",
-    title: "English Book Ladder",
+    siteUrl: 'https://englishbookladder.com',
+    title: 'English Book Ladder',
+    description:
+      'Since January of 2009, we have been helping children and adults learn the English language in Jeongja-dong, Bundang.',
+    author: '@stevekimdev',
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
+        name: 'images',
         path: `${__dirname}/src/images/`,
       },
-      __key: "images",
+      __key: 'images',
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -31,19 +34,19 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /svg/,
           omitKeys: [
-            "xmlnsDc",
-            "xmlnsCc",
-            "xmlnsRdf",
-            "xmlnsSvg",
-            "xmlnsSodipodi",
-            "xmlnsInkscape",
-            "xmlnsSerif",
-            "serifId",
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+            'xmlnsSodipodi',
+            'xmlnsInkscape',
+            'xmlnsSerif',
+            'serifId',
           ],
         },
       },
