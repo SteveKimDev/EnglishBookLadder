@@ -5,7 +5,7 @@ import HeroSection from '../components/home-page/hero';
 
 const HomePage = () => (
   <Layout>
-    <Seo title='English Book Ladder' />
+    <Seo title='Home Page' />
     <HeroSection />
   </Layout>
 );
