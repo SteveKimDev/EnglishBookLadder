@@ -1,3 +1,6 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://englishbookladder.com',
@@ -31,6 +34,13 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/ebl-logo-square.png`, // This path is relative to the root of the site.
         cache_busting_mode: `none`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
