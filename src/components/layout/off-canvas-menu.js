@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap';
 import { Link } from 'gatsby';
 
-import MenuSVG from '../svg/menu.svg';
+import MenuSVG from '../../svg/menu.svg';
 
 function OffCanvasMenu({ name, ...props }) {
   const [show, setShow] = useState(false);
