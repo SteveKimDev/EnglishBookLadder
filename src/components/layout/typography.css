@@ -1,0 +1,9 @@
+/* @font-face {
+  font-family: 'Eurostile Normal';
+  src: url('../../fonts/eurostile-normal.ttf');
+} */
+
+@font-face {
+  font-family: 'Eurostile Extended';
+  src: url('../../fonts/eurostile-extended.ttf');
+}

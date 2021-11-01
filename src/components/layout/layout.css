@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* ///// GOOGLE FONTS ///// */
+/* ///// FONTS ///// */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import '../layout/typography.css';
 /* ///// CUSTOM CSS ///// */
 
 /* general default CSS */
@@ -62,10 +62,11 @@ a:hover {
 
 .hero-title {
   color: #86a0c6;
-  font-size: 7rem;
-  font-weight: 800;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: 'Eurostile Extended';
   text-transform: uppercase;
-  line-height: 110px;
+  line-height: 90px;
   width: 300px;
   margin-bottom: 0;
 }
@@ -114,9 +115,8 @@ a:hover {
     margin-bottom: 115px;
   }
   .hero-title {
-    font-size: 5rem;
-    line-height: 70px;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    line-height: 60px;
   }
   .hero-description {
     font-size: 1.25rem;
@@ -136,7 +136,7 @@ a:hover {
     transform: translateY(0%);
   }
   .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     line-height: normal;
     width: 100%;
@@ -170,7 +170,7 @@ a:hover {
   .hero-title {
     font-size: 3rem;
     text-align: center;
-    line-height: 50px;
+    line-height: normal;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
