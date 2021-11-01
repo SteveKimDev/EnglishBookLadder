@@ -61,5 +61,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-i18n`,
+      options: {
+        langKeyDefault: 'ko',
+        langKeyForNull: 'ko',
+        prefixDefault: false,
+        useLangKeyLayout: false,
+      },
+    },
   ],
 };

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Header from './header';
-import Footer from './footer';
+import Header from './header-en';
+import Footer from './footer-en';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './layout.css';

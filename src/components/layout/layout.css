@@ -168,7 +168,7 @@ a:hover {
     transform: translateY(0%);
   }
   .hero-title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     line-height: normal;
     width: 100%;
@@ -232,6 +232,10 @@ a:hover {
 .header-section .dropdown-item:hover {
   color: #fd7062;
   background-color: transparent;
+}
+
+.header-section .language-selector {
+  color: #4f5663;
 }
 
 .header-section .offcanvas-btn {

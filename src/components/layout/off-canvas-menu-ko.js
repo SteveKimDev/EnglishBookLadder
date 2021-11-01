@@ -19,7 +19,7 @@ function OffCanvasMenu({ name, ...props }) {
   return (
     <>
       <Button variant='primary' onClick={handleShow} className='offcanvas-btn'>
-        <span>MENU</span>
+        <span>Menu</span>
         <MenuSVG className='menu-svg' />
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
@@ -33,57 +33,69 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Home
+                홈페이지
               </Link>
             </div>
 
             {/* Dropdown Menu */}
             <div>
-              <DropdownButton id='dropdown-basic-button' title='Programs'>
-                <Dropdown.Item href='/'>Library Membership</Dropdown.Item>
-                <Dropdown.Item href='/'>Young Readers</Dropdown.Item>
-                <Dropdown.Item href='/'>Adult Classes</Dropdown.Item>
-                <Dropdown.Item href='/'>Private Classes</Dropdown.Item>
-                <Dropdown.Item href='/'>Summer Program</Dropdown.Item>
-                <Dropdown.Item href='/'>Winter Program</Dropdown.Item>
+              <DropdownButton id='dropdown-basic-button' title='프로그램들'>
+                <Dropdown.Item href='/programs/library-membership'>
+                  도서관 회원
+                </Dropdown.Item>
+                <Dropdown.Item href='/programs/young-readers'>
+                  젊은 독자들
+                </Dropdown.Item>
+                <Dropdown.Item href='/programs/adult-classes'>
+                  성인 클래스
+                </Dropdown.Item>
+                <Dropdown.Item href='/programs/adult-classes/#private-classes'>
+                  개인 수업
+                </Dropdown.Item>
+                <Dropdown.Item href='/programs/summer-programs'>
+                  여름 프로그램
+                </Dropdown.Item>
+                <Dropdown.Item href='/programs/winter-programs'>
+                  겨울 프로그램
+                </Dropdown.Item>
               </DropdownButton>
             </div>
             {/* End Dropdown Menu */}
 
             <div>
               <Link
-                to='/'
+                to='/about-ebl'
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                About EBL
+                EBL에 대해
               </Link>
             </div>
             <div>
               <Link
-                to='/'
+                to='/common-q-and-a'
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Common Q&amp;A
+                질문과 답변
               </Link>
             </div>
             <div>
               <Link
-                to='/'
+                to='/contact-and-location'
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Contact &amp; Location
+                연락처 및 위치
               </Link>
             </div>
             <div>
               <Link
-                to='/'
+                to='/en'
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Korean
+                English
               </Link>
             </div>
           </Stack>
