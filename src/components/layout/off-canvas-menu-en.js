@@ -7,6 +7,7 @@ import {
   Dropdown,
 } from 'react-bootstrap';
 import { Link } from 'gatsby';
+import { OffcanvasLinksEnglishQuery } from '../hooks/offcanvas-hook-en';
 
 import MenuSVG from '../../svg/menu.svg';
 
@@ -16,6 +17,9 @@ function OffCanvasMenu({ name, ...props }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const offcanvasquery = OffcanvasLinksEnglishQuery();
+  const offcanvaslinks = offcanvasquery.contentfulNavigationLinks;
+
   return (
     <>
       <Button variant='primary' onClick={handleShow} className='offcanvas-btn'>
@@ -24,7 +28,7 @@ function OffCanvasMenu({ name, ...props }) {
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton closeVariant={'white'}></Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body key={offcanvasquery}>
           <Stack gap={5} className='offcanvas-stack'>
             {/* Header Links */}
             <div>
@@ -33,7 +37,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Home
+                {offcanvaslinks.homePageLinkEnglish}
               </Link>
             </div>
 
@@ -41,22 +45,22 @@ function OffCanvasMenu({ name, ...props }) {
             <div>
               <DropdownButton id='dropdown-basic-button' title='Programs'>
                 <Dropdown.Item href='/en/programs/library-membership'>
-                  Library Membership
+                  {offcanvaslinks.libraryMembershipProgramEnglish}
                 </Dropdown.Item>
                 <Dropdown.Item href='/en/programs/young-readers'>
-                  Young Readers
+                  {offcanvaslinks.youngReadersProgramEnglish}
                 </Dropdown.Item>
                 <Dropdown.Item href='/en/programs/adult-classes'>
-                  Adult Classes
+                  {offcanvaslinks.adultClassesEnglish}
                 </Dropdown.Item>
                 <Dropdown.Item href='/en/programs/adult-classes/#private-classes'>
-                  Private Classes
+                  {offcanvaslinks.privateClassesEnglish}
                 </Dropdown.Item>
                 <Dropdown.Item href='/en/programs/summer-programs'>
-                  Summer Program
+                  {offcanvaslinks.summerProgramEnglish}
                 </Dropdown.Item>
                 <Dropdown.Item href='/en/programs/winter-programs'>
-                  Winter Program
+                  {offcanvaslinks.winterProgramEnglish}
                 </Dropdown.Item>
               </DropdownButton>
             </div>
@@ -68,7 +72,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                About EBL
+                {offcanvaslinks.aboutPageEnglish}
               </Link>
             </div>
             <div>
@@ -77,7 +81,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Common Q&amp;A
+                {offcanvaslinks.qandAPageEnglish}
               </Link>
             </div>
             <div>
@@ -86,7 +90,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                Contact &amp; Location
+                {offcanvaslinks.contactAndLocationPageEnglish}
               </Link>
             </div>
           </Stack>

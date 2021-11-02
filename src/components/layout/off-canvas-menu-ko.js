@@ -7,6 +7,7 @@ import {
   Dropdown,
 } from 'react-bootstrap';
 import { Link } from 'gatsby';
+import { OffcanvasLinksKoreanQuery } from '../hooks/offcanvas-hook-ko';
 
 import MenuSVG from '../../svg/menu.svg';
 
@@ -16,6 +17,9 @@ function OffCanvasMenu({ name, ...props }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const offcanvasquery = OffcanvasLinksKoreanQuery();
+  const offcanvaslinks = offcanvasquery.contentfulNavigationLinks;
+
   return (
     <>
       <Button variant='primary' onClick={handleShow} className='offcanvas-btn'>
@@ -24,7 +28,7 @@ function OffCanvasMenu({ name, ...props }) {
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton closeVariant={'white'}></Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body key={offcanvasquery}>
           <Stack gap={5} className='offcanvas-stack'>
             {/* Header Links */}
             <div>
@@ -33,7 +37,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                홈페이지
+                {offcanvaslinks.homePageLinkKorean}
               </Link>
             </div>
 
@@ -41,22 +45,22 @@ function OffCanvasMenu({ name, ...props }) {
             <div>
               <DropdownButton id='dropdown-basic-button' title='프로그램들'>
                 <Dropdown.Item href='/programs/library-membership'>
-                  도서관 회원
+                  {offcanvaslinks.libraryMembershipProgramKorean}
                 </Dropdown.Item>
                 <Dropdown.Item href='/programs/young-readers'>
-                  젊은 독자들
+                  {offcanvaslinks.youngReadersProgramKorean}
                 </Dropdown.Item>
                 <Dropdown.Item href='/programs/adult-classes'>
-                  성인 클래스
+                  {offcanvaslinks.adultClassesKorean}
                 </Dropdown.Item>
                 <Dropdown.Item href='/programs/adult-classes/#private-classes'>
-                  개인 수업
+                  {offcanvaslinks.privateClassesKorean}
                 </Dropdown.Item>
                 <Dropdown.Item href='/programs/summer-programs'>
-                  여름 프로그램
+                  {offcanvaslinks.summerProgramKorean}
                 </Dropdown.Item>
                 <Dropdown.Item href='/programs/winter-programs'>
-                  겨울 프로그램
+                  {offcanvaslinks.winterProgramKorean}
                 </Dropdown.Item>
               </DropdownButton>
             </div>
@@ -68,7 +72,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                EBL에 대해
+                {offcanvaslinks.aboutPageKorean}
               </Link>
             </div>
             <div>
@@ -77,7 +81,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                질문과 답변
+                {offcanvaslinks.qandAPageKorean}
               </Link>
             </div>
             <div>
@@ -86,7 +90,7 @@ function OffCanvasMenu({ name, ...props }) {
                 className='header-link offcanvas-link'
                 onClick={handleClose}
               >
-                연락처 및 위치
+                {offcanvaslinks.contactAndLocationPageKorean}
               </Link>
             </div>
           </Stack>
