@@ -34,6 +34,17 @@ a:hover {
   color: #ffffff;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.btn-center,
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* custom default CSS */
 .section-hero {
   position: relative;
@@ -43,6 +54,10 @@ a:hover {
 .section-blue-background {
   margin: 0 50px;
   padding: 100px 50px;
+  background-color: #edf0f8;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .section-white-background {
@@ -50,8 +65,11 @@ a:hover {
 }
 
 .card-div {
-  margin-bottom: 50px;
+  margin: 25px;
   padding: 20px 20px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hero-copy {
@@ -75,6 +93,20 @@ a:hover {
   font-size: 1.5rem;
   line-height: 30px;
   width: 425px;
+}
+
+.cta-btn-shadow {
+  color: #ffffff;
+  background-color: #fd7062;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 175px;
+  display: block;
+  margin-top: 40px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cta-btn {
@@ -102,6 +134,14 @@ a:hover {
 }
 
 .section-title {
+  color: #86a0c6;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #86a0c6;
   margin-bottom: 20px;
 }
 
@@ -126,6 +166,17 @@ a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
+  .section-blue-background {
+    margin: 0 30px;
+    padding: 50px 30px;
+  }
+  .section-white-background {
+    margin: 100px 60px;
+  }
+  .card-div {
+    margin: 15px;
+    padding: 20px 20px 40px;
+  }
   .section-hero {
     margin: 50px 30px;
   }
@@ -151,13 +202,26 @@ a:hover {
     display: block;
     margin: auto;
   }
-  .cta-btn {
+  .cta-btn-shadow {
     margin: 40px auto 0;
     display: block;
   }
 }
 
 @media (max-width: 575px) {
+  .section-blue-background {
+    margin: 0 15px;
+    padding: 50px 15px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  .section-white-background {
+    margin: 100px 30px;
+  }
+  .card-div {
+    margin: 15px;
+    padding: 20px 20px 40px;
+  }
   .section-hero {
     margin: 50px 15px;
   }
@@ -181,7 +245,7 @@ a:hover {
     width: 100%;
     text-align: center;
   }
-  .cta-btn {
+  .cta-btn-shadow {
     margin: 40px auto 0;
     display: block;
   }

@@ -8,12 +8,12 @@ import PhoneSVG from '../../svg/phone.svg';
 const HeroSection = () => (
   <StaticQuery
     query={graphql`
-      query HomePageHeroKorean {
+      query HomePageHeroEnglish {
         allContentfulHomePageAssembly {
           nodes {
-            heroTitleKorean
-            heroDescriptionKorean {
-              heroDescriptionKorean
+            heroTitleEnglish
+            heroDescriptionEnglish {
+              heroDescriptionEnglish
             }
           }
         }
@@ -25,17 +25,17 @@ const HeroSection = () => (
           <Col lg={4} className={`order-last order-lg-first`}>
             <div className={`hero-copy`}>
               <h1 className={`hero-title`}>
-                {data.allContentfulHomePageAssembly.nodes[0].heroTitleKorean}
+                {data.allContentfulHomePageAssembly.nodes[0].heroTitleEnglish}
               </h1>
               <p className={`hero-description`}>
                 {
                   data.allContentfulHomePageAssembly.nodes[0]
-                    .heroDescriptionKorean.heroDescriptionKorean
+                    .heroDescriptionEnglish.heroDescriptionEnglish
                 }
               </p>
               <div>
-                <a href='tel:03180225010' className={`cta-btn`}>
-                  전화주세요 <PhoneSVG className={`cta-phone-icon`} />
+                <a href='tel:03180225010' className={`cta-btn-shadow`}>
+                  Call Us <PhoneSVG className={`cta-phone-icon`} />
                 </a>
               </div>
             </div>
