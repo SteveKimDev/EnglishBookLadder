@@ -4,10 +4,12 @@ import Layout from '../components/layout/layout-ko';
 import HeroSection from '../components/home-page/hero-ko';
 
 const HomePage = () => (
-  <Layout>
-    <Seo title='Home Page' />
-    <HeroSection />
-  </Layout>
+  <div id='home-page'>
+    <Layout>
+      <Seo title='Home Page' />
+      <HeroSection />
+    </Layout>
+  </div>
 );
 
 export default HomePage;

@@ -19,7 +19,7 @@ function OffCanvasMenu({ name, ...props }) {
   return (
     <>
       <Button variant='primary' onClick={handleShow} className='offcanvas-btn'>
-        <span>Menu</span>
+        <span>MENU</span>
         <MenuSVG className='menu-svg' />
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
@@ -87,15 +87,6 @@ function OffCanvasMenu({ name, ...props }) {
                 onClick={handleClose}
               >
                 연락처 및 위치
-              </Link>
-            </div>
-            <div>
-              <Link
-                to='/en'
-                className='header-link offcanvas-link'
-                onClick={handleClose}
-              >
-                English
               </Link>
             </div>
           </Stack>

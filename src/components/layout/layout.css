@@ -21,6 +21,7 @@ h1,
 h2,
 h3 {
   margin-bottom: 1.5rem;
+  font-family: 'Eurostile Extended';
 }
 
 a {
@@ -64,7 +65,6 @@ a:hover {
   color: #86a0c6;
   font-size: 5rem;
   font-weight: 900;
-  font-family: 'Eurostile Extended';
   text-transform: uppercase;
   line-height: 90px;
   width: 300px;
@@ -191,6 +191,7 @@ a:hover {
 
 /* Header */
 .header-section {
+  position: relative;
   padding: 5px 30px;
 }
 
@@ -204,11 +205,11 @@ a:hover {
   color: #fd7062;
 }
 
-.header-link {
+.header-section .header-link {
   color: #4f5663;
 }
 
-.header-link:hover {
+.header-section .header-link:hover {
   color: #fd7062;
 }
 
@@ -278,7 +279,7 @@ a:hover {
   margin-top: 50px;
 }
 
-.offcanvas-link {
+.offcanvas-stack .offcanvas-link {
   color: #ffffff;
   font-size: 3rem;
   font-weight: 600;
@@ -302,6 +303,26 @@ a:hover {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.selector-hidden {
+  display: none;
+}
+
+#home-page .home-selector,
+#about-page .about-selector,
+#q-and-a-page .q-and-a-selector,
+#contact-page .contact-selector,
+#library-page .library-selector,
+#yr-page .yr-selector,
+#adult-page .adult-selector,
+#summer-page .summer-selector,
+#winter-page .winter-selector,
+#four-o-four-page .four-o-four-selector {
+  display: block;
+  border: #fd7062 2px solid;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /* Footer */
@@ -330,6 +351,20 @@ a:hover {
   .header-section .hidden {
     display: none;
   }
+  #home-page .home-selector,
+  #about-page .about-selector,
+  #q-and-a-page .q-and-a-selector,
+  #contact-page .contact-selector,
+  #library-page .library-selector,
+  #yr-page .yr-selector,
+  #adult-page .adult-selector,
+  #summer-page .summer-selector,
+  #winter-page .winter-selector,
+  #four-o-four-page .four-o-four-selector {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+  }
   .footer-col {
     text-align: center;
     padding-left: 0;
@@ -344,10 +379,27 @@ a:hover {
   .header-section {
     padding: 5px 15px;
   }
+  #home-page .home-selector,
+  #about-page .about-selector,
+  #q-and-a-page .q-and-a-selector,
+  #contact-page .contact-selector,
+  #library-page .library-selector,
+  #yr-page .yr-selector,
+  #adult-page .adult-selector,
+  #summer-page .summer-selector,
+  #winter-page .winter-selector,
+  #four-o-four-page .four-o-four-selector {
+    position: absolute;
+    top: 21px;
+    left: 115px;
+  }
   .offcanvas-header .btn-close {
     margin: 10px 90% 0;
   }
-  .offcanvas-link,
+  .offcanvas-stack {
+    margin-top: 25px;
+  }
+  .offcanvas-stack .offcanvas-link,
   .offcanvas-stack .dropdown-toggle,
   .offcanvas-stack .show > .btn-primary.dropdown-toggle {
     font-size: 2rem;

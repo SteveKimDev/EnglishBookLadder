@@ -3,6 +3,7 @@ import Stack from 'react-bootstrap/Stack';
 import { Link } from 'gatsby';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 
+import LanguageSelectorKo from '../layout/language-selector-ko';
 import OffCanvasMenu from './off-canvas-menu-en';
 
 const Header = () => (
@@ -55,10 +56,8 @@ const Header = () => (
         Contact &amp; Location
       </Link>
     </div>
-    <div className='ms-auto hidden'>
-      <Link to='/' className='header-link'>
-        한국어
-      </Link>
+    <div className='ms-auto'>
+      <LanguageSelectorKo />
     </div>
     <div className=' ms-auto display'>
       <OffCanvasMenu />

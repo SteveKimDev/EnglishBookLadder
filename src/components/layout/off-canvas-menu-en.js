@@ -89,15 +89,6 @@ function OffCanvasMenu({ name, ...props }) {
                 Contact &amp; Location
               </Link>
             </div>
-            <div>
-              <Link
-                to='/'
-                className='header-link offcanvas-link'
-                onClick={handleClose}
-              >
-                한국어
-              </Link>
-            </div>
           </Stack>
         </Offcanvas.Body>
       </Offcanvas>
