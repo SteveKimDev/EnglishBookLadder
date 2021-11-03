@@ -4,12 +4,12 @@ import Img from 'gatsby-image';
 
 import * as HomeStyle from '../homestyle.module.css';
 
-const ProgramImgOne = () => (
+const ProgramImgTwo = () => (
   <StaticQuery
     query={graphql`
       query {
         contentfulHomePageAssembly {
-          program1Assembly {
+          program2Assembly {
             programImage {
               fluid(maxWidth: 1000, quality: 100) {
                 ...GatsbyContentfulFluid
@@ -25,11 +25,11 @@ const ProgramImgOne = () => (
         style={{ borderRadius: '5px' }}
         className={`${HomeStyle.programCardImg}`}
         fluid={
-          data.contentfulHomePageAssembly.program1Assembly.programImage.fluid
+          data.contentfulHomePageAssembly.program2Assembly.programImage.fluid
         }
       />
     )}
   />
 );
 
-export default ProgramImgOne;
+export default ProgramImgTwo;
