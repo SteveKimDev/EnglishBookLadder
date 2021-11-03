@@ -18,7 +18,7 @@ const AboutSection = () => (
     `}
     render={(data) => (
       <section className='section-blue-background'>
-        <h2 className='section-title'>
+        <h2 className='section-title text-center'>
           {data.allContentfulHomePageAssembly.nodes[0].aboutTitleKorean}
         </h2>
         <p>

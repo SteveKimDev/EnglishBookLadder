@@ -1,3 +1,7 @@
+.section {
+  position: relative;
+}
+
 .card-div {
   margin: 25px 0;
   padding: 20px 20px 40px;
@@ -23,12 +27,43 @@
   height: 100px;
 }
 
+.slider-div {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .card-one,
+  .card-two,
+  .card-three {
+    margin-top: 0;
+  }
+  .card-four,
+  .card-five,
+  .card-six {
+    margin-bottom: 0;
+  }
+  .library-col-one-div {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40%;
+  }
+}
+
 @media (max-width: 991px) {
   .card-div {
     flex: 0 0 42% !important;
     max-width: 42% !important;
   }
 
+  .card-div h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .card-one,
   .card-two,
   .card-three,
@@ -38,6 +73,30 @@
     margin-left: 4%;
     margin-right: 4%;
   }
+  .card-one,
+  .card-two {
+    margin-top: 0;
+  }
+  .card-five,
+  .card-six {
+    margin-bottom: 0;
+  }
+  .library-col-one-div {
+    margin-bottom: 50px;
+  }
+  .library-col-one-div h2 {
+    text-align: center;
+  }
+  .library-col-one-div p {
+    text-align: center;
+  }
+  .library-col-one-div a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider-div {
+    margin: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -45,7 +104,9 @@
     flex: 0 0 100% !important;
     max-width: 100% !important;
   }
-
+  .card-div h3 {
+    width: 100%;
+  }
   .card-one,
   .card-two,
   .card-three,
@@ -54,6 +115,18 @@
   .card-six {
     margin-left: 0;
     margin-right: 0;
+  }
+  .card-one {
+    margin-top: 0;
+  }
+  .card-two {
+    margin-top: 25px;
+  }
+  .card-five {
+    margin-bottom: 25px;
+  }
+  .card-six {
+    margin-bottom: 0;
   }
   .description-height {
     height: auto;

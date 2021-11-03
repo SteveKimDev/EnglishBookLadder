@@ -49,7 +49,7 @@ a:hover {
 
 .section-blue-background {
   margin: 0 50px;
-  padding: 100px 50px;
+  padding: 100px 100px;
   background-color: #edf0f8;
   border-radius: 25px;
   -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.2);
@@ -57,7 +57,11 @@ a:hover {
 }
 
 .section-white-background {
-  margin: 100px;
+  margin: 150px;
+}
+
+.last-section {
+  margin-bottom: 100px;
 }
 
 .hero-copy {
@@ -123,7 +127,6 @@ a:hover {
 
 .section-title {
   color: #86a0c6;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -156,18 +159,14 @@ a:hover {
 
 @media (min-width: 576px) and (max-width: 991px) {
   .section-blue-background {
-    margin: 0 30px;
-    padding: 50px 30px;
+    margin: 0 50px;
+    padding: 50px 50px;
   }
   .section-white-background {
-    margin: 100px 60px;
-  }
-  .card-div {
-    margin: 15px;
-    padding: 20px 20px 40px;
+    margin: 100px 100px;
   }
   .section-hero {
-    margin: 50px 30px;
+    margin: 50px 30px 100px;
   }
   .hero-copy {
     position: relative;
@@ -199,20 +198,16 @@ a:hover {
 
 @media (max-width: 575px) {
   .section-blue-background {
-    margin: 0 15px;
-    padding: 50px 15px;
+    margin: 0 20px;
+    padding: 50px 20px;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   }
   .section-white-background {
-    margin: 100px 30px;
-  }
-  .card-div {
-    margin: 15px;
-    padding: 20px 20px 40px;
+    margin: 100px 40px;
   }
   .section-hero {
-    margin: 50px 15px;
+    margin: 50px 15px 100px;
   }
   .hero-copy {
     position: relative;

@@ -58,8 +58,8 @@ const ProgramSection = () => (
       }
     `}
     render={(data) => (
-      <section className='section-white-background'>
-        <h2 className='section-title'>
+      <section className={`section-white-background`}>
+        <h2 className='section-title text-center'>
           {data.allContentfulHomePageAssembly.nodes[0].programTitleKorean}
         </h2>
         <Row>
