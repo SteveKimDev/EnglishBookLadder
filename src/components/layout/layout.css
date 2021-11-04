@@ -141,7 +141,7 @@ a:hover {
 
 .section-title {
   color: #86a0c6;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -348,24 +348,44 @@ a:hover {
   font-weight: 600;
 }
 
-.offcanvas-stack .dropdown-toggle,
-.offcanvas-stack .show > .btn-primary.dropdown-toggle {
+.offcanvas-stack .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+
+.offcanvas-stack .accordion-button {
   color: #ffffff;
   background-color: transparent;
   border: none;
   font-size: 3rem;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  width: 295px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.offcanvas-stack .dropdown-toggle::after {
-  color: #86a0c6;
+.offcanvas-stack .accordion-button .accordion-arrow {
+  fill: #ffffff;
+  width: 30px;
+  height: 100%;
+  margin-left: 10px;
+  padding-top: 5px;
 }
 
-.offcanvas-stack .dropdown-item {
-  color: #4f5663;
+.offcanvas-stack .accordion-button::after {
+  display: none;
+}
+
+.offcanvas-stack .accordion-body div {
+  margin-top: 20px;
+}
+
+.offcanvas-stack .accordion-link {
   font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .selector-hidden {
@@ -462,16 +482,29 @@ a:hover {
   .offcanvas-stack {
     margin-top: 25px;
   }
-  .offcanvas-stack .offcanvas-link,
-  .offcanvas-stack .dropdown-toggle,
-  .offcanvas-stack .show > .btn-primary.dropdown-toggle {
+  .offcanvas-stack .offcanvas-link {
     font-size: 2rem;
     font-weight: 600;
   }
-  .offcanvas-stack .dropdown-item {
-    color: #4f5663;
+  .offcanvas-stack .accordion-button {
+    font-size: 2rem;
+    width: 210px;
+  }
+
+  .offcanvas-stack .accordion-button .accordion-arrow {
+    fill: #ffffff;
+    width: 20px;
+    height: 100%;
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+
+  .offcanvas-stack .accordion-body div {
+    margin-top: 20px;
+  }
+
+  .offcanvas-stack .accordion-link {
     font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 0;
+    font-weight: 500;
   }
 }

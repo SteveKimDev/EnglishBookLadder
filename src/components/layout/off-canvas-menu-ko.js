@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import {
-  Button,
-  Offcanvas,
-  Stack,
-  DropdownButton,
-  Dropdown,
-} from 'react-bootstrap';
+import { Button, Offcanvas, Stack, Accordion } from 'react-bootstrap';
 import { Link } from 'gatsby';
 import { OffcanvasLinksKoreanQuery } from '../hooks/offcanvas-hook-ko';
 
 import MenuSVG from '../../svg/menu.svg';
+import DownArrowSVG from '../../svg/down-arrow.svg';
 
 function OffCanvasMenu({ name, ...props }) {
   const [show, setShow] = useState(false);
@@ -41,30 +36,67 @@ function OffCanvasMenu({ name, ...props }) {
               </Link>
             </div>
 
-            {/* Dropdown Menu */}
+            {/* Accordion Menu */}
             <div>
-              <DropdownButton id='dropdown-basic-button' title='프로그램들'>
-                <Dropdown.Item href='/programs/library-membership'>
-                  {offcanvaslinks.libraryMembershipProgramKorean}
-                </Dropdown.Item>
-                <Dropdown.Item href='/programs/young-readers'>
-                  {offcanvaslinks.youngReadersProgramKorean}
-                </Dropdown.Item>
-                <Dropdown.Item href='/programs/adult-classes'>
-                  {offcanvaslinks.adultClassesKorean}
-                </Dropdown.Item>
-                <Dropdown.Item href='/programs/adult-classes/#private-classes'>
-                  {offcanvaslinks.privateClassesKorean}
-                </Dropdown.Item>
-                <Dropdown.Item href='/programs/summer-programs'>
-                  {offcanvaslinks.summerProgramKorean}
-                </Dropdown.Item>
-                <Dropdown.Item href='/programs/winter-programs'>
-                  {offcanvaslinks.winterProgramKorean}
-                </Dropdown.Item>
-              </DropdownButton>
+              <Accordion>
+                <Accordion.Item eventKey='0'>
+                  <Accordion.Header>
+                    프로그램들 <DownArrowSVG className='accordion-arrow' />
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <div>
+                      <Link
+                        to='/en/programs/library-membership'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.libraryMembershipProgramKorean}
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to='/en/programs/young-readers'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.youngReadersProgramKorean}
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to='/en/programs/adult-classes'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.adultClassesKorean}
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to='/en/programs/adult-classes/#private-classes'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.privateClassesKorean}
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to='/en/programs/summer-programs'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.summerProgramKorean}
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to='/en/programs/winter-programs'
+                        className='accordion-link'
+                      >
+                        {offcanvaslinks.winterProgramKorean}
+                      </Link>
+                    </div>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
-            {/* End Dropdown Menu */}
+            {/* End Accordion Menu */}
 
             <div>
               <Link

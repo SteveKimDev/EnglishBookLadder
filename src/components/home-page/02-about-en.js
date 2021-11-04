@@ -21,11 +21,11 @@ const AboutSection = () => (
         <h2 className='section-title text-center'>
           {data.allContentfulHomePageAssembly.nodes[0].aboutTitleEnglish}
         </h2>
-        <p>
+        <div>
           {renderRichText(
             data.allContentfulHomePageAssembly.nodes[0].aboutDescriptionEnglish
           )}
-        </p>
+        </div>
         <Link to='/en/library-membership' className='cta-btn btn-center'>
           Read More
         </Link>
