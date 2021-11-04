@@ -141,6 +141,7 @@ a:hover {
 
 .section-title {
   color: #86a0c6;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -230,7 +231,7 @@ a:hover {
     transform: translateY(0%);
   }
   .hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     line-height: normal;
     width: 100%;
