@@ -86,7 +86,7 @@ const ProgramSection = () => (
               to='/en/programs/library-membership'
               className={`cta-btn btn-center`}
             >
-              Learn More
+              더 알아보기
             </Link>
           </Col>
           <Col
@@ -109,7 +109,7 @@ const ProgramSection = () => (
               }
             </p>
             <Link to='/en/programs/about-ebl' className={`cta-btn btn-center`}>
-              Learn More
+              더 알아보기
             </Link>
           </Col>
           <Col
@@ -135,7 +135,7 @@ const ProgramSection = () => (
               to='/en/programs/adult-classes'
               className={`cta-btn btn-center`}
             >
-              Learn More
+              더 알아보기
             </Link>
           </Col>
           <Col
@@ -161,7 +161,7 @@ const ProgramSection = () => (
               to='/en/programs/adult-classes/#private-classes'
               className={`cta-btn btn-center`}
             >
-              Learn More
+              더 알아보기
             </Link>
           </Col>
           <Col
@@ -187,7 +187,7 @@ const ProgramSection = () => (
               to='/en/programs/summer-programs'
               className={`cta-btn btn-center`}
             >
-              Learn More
+              더 알아보기
             </Link>
           </Col>
           <Col
@@ -213,7 +213,7 @@ const ProgramSection = () => (
               to='/en/programs/winter-programs'
               className={`cta-btn btn-center`}
             >
-              Learn More
+              더 알아보기
             </Link>
           </Col>
         </Row>

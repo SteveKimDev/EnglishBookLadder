@@ -41,6 +41,20 @@ a:hover {
   margin-right: auto;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #fd7062;
+}
+
 /* custom default CSS */
 .section-hero {
   position: relative;

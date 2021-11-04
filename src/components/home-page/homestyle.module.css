@@ -33,6 +33,11 @@
   margin-left: auto;
 }
 
+.slider-img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 992px) {
   .card-one,
   .card-two,
