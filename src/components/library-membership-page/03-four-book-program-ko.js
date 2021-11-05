@@ -5,13 +5,11 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text';
 const LibraryMembershipSection = () => (
   <StaticQuery
     query={graphql`
-      query LibraryMembershipPageGeneralMembershipKorean {
+      query LibraryMembershipPageFourBookProgramKorean {
         allContentfulLibraryMembershipPageAssembly {
           nodes {
-            libraryMembershipTitleKorean
-            libraryScheduleKorean
-            libraryBusinessHours
-            libraryMembershipDescriptionKorean {
+            fourBookProgramTitleKorean
+            fourBookProgramDescriptionKorean {
               raw
             }
           }
@@ -19,31 +17,18 @@ const LibraryMembershipSection = () => (
       }
     `}
     render={(data) => (
-      <section className='section-blue-background'>
+      <section className='section-white-background'>
         <h2 className='section-title text-center'>
           {
             data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryMembershipTitleKorean
+              .fourBookProgramTitleKorean
           }
         </h2>
-        <p className='text-center mb-3rem'>
-          {
-            data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryScheduleKorean
-          }
-          <br />
-          {
-            data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryBusinessHours
-          }
-          <br />
-          (무제한 사용 시간)
-        </p>
-
+        <p className='text-center mb-3rem'>일주일에 한 번</p>
         <div>
           {renderRichText(
             data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryMembershipDescriptionKorean
+              .fourBookProgramDescriptionKorean
           )}
         </div>
       </section>

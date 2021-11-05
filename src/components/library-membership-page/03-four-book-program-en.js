@@ -5,13 +5,11 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text';
 const FourBookProgramSection = () => (
   <StaticQuery
     query={graphql`
-      query LibraryMembershipPageGeneralMembershipEnglish {
+      query LibraryMembershipPageFourBookProgramEnglish {
         allContentfulLibraryMembershipPageAssembly {
           nodes {
-            libraryMembershipTitleEnglish
-            libraryScheduleEnglish
-            libraryBusinessHours
-            libraryMembershipDescriptionEnglish {
+            fourBookProgramTitleEnglish
+            fourBookProgramDescriptionEnglish {
               raw
             }
           }
@@ -19,31 +17,18 @@ const FourBookProgramSection = () => (
       }
     `}
     render={(data) => (
-      <section className='section-blue-background'>
+      <section className='section-white-background'>
         <h2 className='section-title text-center'>
           {
             data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryMembershipTitleEnglish
+              .fourBookProgramTitleEnglish
           }
         </h2>
-        <p className='text-center mb-3rem'>
-          {
-            data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryScheduleEnglish
-          }
-          <br />
-          {
-            data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryBusinessHours
-          }
-          <br />
-          (unlimited Hours of Use)
-        </p>
-
+        <p className='text-center mb-3rem'>Once a Week</p>
         <div>
           {renderRichText(
             data.allContentfulLibraryMembershipPageAssembly.nodes[0]
-              .libraryMembershipDescriptionEnglish
+              .fourBookProgramDescriptionEnglish
           )}
         </div>
       </section>
