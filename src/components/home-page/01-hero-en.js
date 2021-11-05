@@ -41,7 +41,7 @@ const HeroSection = () => (
             </div>
           </Col>
           <Col lg={8} className={`order-first order-lg-last`}>
-            <HeroSVG className={`hero-svg-width`} />
+            <HeroSVG />
           </Col>
         </Row>
       </section>
