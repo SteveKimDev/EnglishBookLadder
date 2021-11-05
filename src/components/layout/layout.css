@@ -91,14 +91,14 @@ a:hover {
   font-weight: 900;
   text-transform: uppercase;
   line-height: 90px;
-  width: 300px;
+  width: 400px;
   margin-bottom: 0;
 }
 
 .hero-description {
   font-size: 1.5rem;
   line-height: 30px;
-  width: 425px;
+  width: 475px;
 }
 
 .cta-btn-shadow {
@@ -153,10 +153,6 @@ a:hover {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .section-hero {
-    margin-top: 115px;
-    margin-bottom: 115px;
-  }
   .hero-title {
     font-size: 3.5rem;
     line-height: 60px;
@@ -252,7 +248,7 @@ a:hover {
   }
 
   .hero-svg-height {
-    height: 200px;
+    height: 220px;
   }
   .section-title {
     font-size: 2rem;
