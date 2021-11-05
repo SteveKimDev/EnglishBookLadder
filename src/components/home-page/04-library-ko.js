@@ -49,7 +49,7 @@ const LibrarySection = () => (
                     .libraryBusinessHours
                 }
               </p>
-              <Link to='/en/library-membership' className={`cta-btn`}>
+              <Link to='/programs/library-membership' className={`cta-btn`}>
                 더 알아보기
               </Link>
             </div>

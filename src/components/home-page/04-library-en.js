@@ -52,7 +52,7 @@ const LibrarySection = () => (
                     .libraryBusinessHours
                 }
               </p>
-              <Link to='/en/library-membership' className={`cta-btn`}>
+              <Link to='/en/programs/library-membership' className={`cta-btn`}>
                 Learn More
               </Link>
             </div>

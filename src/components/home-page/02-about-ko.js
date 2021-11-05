@@ -26,7 +26,7 @@ const AboutSection = () => (
             data.allContentfulHomePageAssembly.nodes[0].aboutDescriptionKorean
           )}
         </div>
-        <Link to='/library-membership' className='cta-btn btn-center'>
+        <Link to='/about-ebl' className='cta-btn btn-center'>
           더 읽기
         </Link>
       </section>

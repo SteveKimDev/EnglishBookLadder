@@ -26,7 +26,7 @@ const AboutSection = () => (
             data.allContentfulHomePageAssembly.nodes[0].aboutDescriptionEnglish
           )}
         </div>
-        <Link to='/en/library-membership' className='cta-btn btn-center'>
+        <Link to='/en/about-ebl' className='cta-btn btn-center'>
           Read More
         </Link>
       </section>
