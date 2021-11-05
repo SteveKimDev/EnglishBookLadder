@@ -3,6 +3,7 @@
 /* ///// FONTS ///// */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import '../layout/typography.css';
+
 /* ///// CUSTOM CSS ///// */
 
 /* general default CSS */
@@ -41,6 +42,19 @@ a:hover {
   margin-right: auto;
 }
 
+.mb-1rem {
+  margin-bottom: 1rem;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.mb-3rem {
+  margin-bottom: 3rem;
+}
+
+/* Carousel Css */
 .carousel-control-next,
 .carousel-control-prev {
   display: none;
@@ -146,10 +160,6 @@ a:hover {
   color: #86a0c6;
   font-size: 1.5rem;
   margin-bottom: 20px;
-}
-
-.mb-1rem {
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
