@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-const ClassSection = () => (
+const MorningClassSection = () => (
   <StaticQuery
     query={graphql`
-      query YoungReadersPageClassesKorean {
-        allContentfulYoungReadersPageAssembly {
+      query MorningClassesPageClassesKorean {
+        allContentfulAdultClassesPageAssembly {
           nodes {
-            youngReadersTitleKorean
-            youngReadersDescriptionKorean {
-              youngReadersDescriptionKorean
+            morningClassTitleKorean
+            morningClassDescriptionKorean {
+              morningClassDescriptionKorean
             }
             class1 {
               classTitleKorean
@@ -37,37 +37,37 @@ const ClassSection = () => (
       }
     `}
     render={(data) => (
-      <section className={`section-blue-background last-section`}>
+      <section className={`section-blue-background`}>
         <div className={`mb-2rem`}>
           <h2 className={`section-title text-center`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0]
-                .youngReadersTitleKorean
+              data.allContentfulAdultClassesPageAssembly.nodes[0]
+                .morningClassTitleKorean
             }
           </h2>
           <p>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0]
-                .youngReadersDescriptionKorean.youngReadersDescriptionKorean
+              data.allContentfulAdultClassesPageAssembly.nodes[0]
+                .morningClassDescriptionKorean.morningClassDescriptionKorean
             }
           </p>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
                 .classTitleKorean
             }
           </h3>
           <p className={`mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
                 .classScheduleKorean
             }
           </p>
           <p>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
                 .classDescriptionKorean.classDescriptionKorean
             }
           </p>
@@ -75,19 +75,19 @@ const ClassSection = () => (
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
                 .classTitleKorean
             }
           </h3>
           <p className={`mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
                 .classScheduleKorean
             }
           </p>
           <p>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
                 .classDescriptionKorean.classDescriptionKorean
             }
           </p>
@@ -95,19 +95,19 @@ const ClassSection = () => (
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
                 .classTitleKorean
             }
           </h3>
           <p className={`mb-05rem`}>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
                 .classScheduleKorean
             }
           </p>
           <p>
             {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
                 .classDescriptionKorean.classDescriptionKorean
             }
           </p>
@@ -117,4 +117,4 @@ const ClassSection = () => (
   />
 );
 
-export default ClassSection;
+export default MorningClassSection;
