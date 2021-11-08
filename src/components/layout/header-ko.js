@@ -49,10 +49,10 @@ const Header = () => (
             <Dropdown.Item href='/programs/adult-classes/#private-classes'>
               {data.contentfulNavigationLinks.privateClassesKorean}
             </Dropdown.Item>
-            <Dropdown.Item href='/programs/summer-programs'>
+            <Dropdown.Item href='/programs/summer-winter-programs'>
               {data.contentfulNavigationLinks.summerProgramKorean}
             </Dropdown.Item>
-            <Dropdown.Item href='/programs/winter-programs'>
+            <Dropdown.Item href='/programs/summer-winter-programs/#winter-program'>
               {data.contentfulNavigationLinks.winterProgramKorean}
             </Dropdown.Item>
           </DropdownButton>

@@ -23,7 +23,10 @@ const PrivateClassSection = () => (
       }
     `}
     render={(data) => (
-      <section className={`section-blue-background last-section`}>
+      <section
+        className={`section-blue-background last-section`}
+        id='private-classes'
+      >
         <div className={`mb-2rem`}>
           <h2 className={`section-title text-center`}>
             {

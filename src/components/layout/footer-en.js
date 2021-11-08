@@ -90,12 +90,12 @@ const Footer = () => (
               </Link>
             </div>
             <div className='mb-1rem'>
-              <Link to='/en/programs/summer-programs'>
+              <Link to='/en/programs/summer-winter-programs'>
                 {data.contentfulNavigationLinks.summerProgramEnglish}
               </Link>
             </div>
             <div className='mb-1rem'>
-              <Link to='/en/programs/winter-programs'>
+              <Link to='/en/programs/summer-winter-programs/#winter-program'>
                 {data.contentfulNavigationLinks.winterProgramEnglish}
               </Link>
             </div>

@@ -48,6 +48,7 @@ function OffCanvasMenu({ name, ...props }) {
                       <Link
                         to='/en/programs/library-membership'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.libraryMembershipProgramEnglish}
                       </Link>
@@ -56,6 +57,7 @@ function OffCanvasMenu({ name, ...props }) {
                       <Link
                         to='/en/programs/young-readers'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.youngReadersProgramEnglish}
                       </Link>
@@ -64,6 +66,7 @@ function OffCanvasMenu({ name, ...props }) {
                       <Link
                         to='/en/programs/adult-classes'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.adultClassesEnglish}
                       </Link>
@@ -72,22 +75,25 @@ function OffCanvasMenu({ name, ...props }) {
                       <Link
                         to='/en/programs/adult-classes/#private-classes'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.privateClassesEnglish}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/summer-programs'
+                        to='/en/programs/summer-winter-programs'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.summerProgramEnglish}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/winter-programs'
+                        to='/en/programs/summer-winter-programs/#winter-program'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.winterProgramEnglish}
                       </Link>

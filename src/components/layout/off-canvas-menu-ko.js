@@ -46,48 +46,54 @@ function OffCanvasMenu({ name, ...props }) {
                   <Accordion.Body>
                     <div>
                       <Link
-                        to='/en/programs/library-membership'
+                        to='/programs/library-membership'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.libraryMembershipProgramKorean}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/young-readers'
+                        to='/programs/young-readers'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.youngReadersProgramKorean}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/adult-classes'
+                        to='/programs/adult-classes'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.adultClassesKorean}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/adult-classes/#private-classes'
+                        to='/programs/adult-classes/#private-classes'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.privateClassesKorean}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/summer-programs'
+                        to='/programs/summer-winter-programs'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.summerProgramKorean}
                       </Link>
                     </div>
                     <div>
                       <Link
-                        to='/en/programs/winter-programs'
+                        to='/programs/summer-winter-programs/#winter-program'
                         className='accordion-link'
+                        onClick={handleClose}
                       >
                         {offcanvaslinks.winterProgramKorean}
                       </Link>

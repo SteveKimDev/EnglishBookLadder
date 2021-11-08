@@ -1,5 +1,30 @@
+.summer-winter-hero-title {
+  width: 515px;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .summer-winter-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .summer-winter-hero-title {
+    width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .summer-winter-hero-title {
+    width: 100%;
+  }
+}
+
 @media (max-width: 575px) {
   .library-hero-title {
     font-size: 2.4rem;
+  }
+  .summer-winter-hero-title {
+    font-size: 2.75rem;
   }
 }

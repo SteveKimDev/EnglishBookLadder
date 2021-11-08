@@ -43,14 +43,8 @@ const LanguageSelectorKo = () => (
       En | Ko
     </Link>
     <Link
-      to='/programs/summer-programs'
-      className='summer-selector header-link selector-hidden'
-    >
-      En | Ko
-    </Link>
-    <Link
-      to='/programs/winter-programs'
-      className='winter-selector header-link selector-hidden'
+      to='/programs/summer-winter-programs'
+      className='summer-winter-selector header-link selector-hidden'
     >
       En | Ko
     </Link>

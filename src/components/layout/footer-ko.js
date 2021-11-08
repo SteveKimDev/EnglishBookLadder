@@ -88,12 +88,12 @@ const Footer = () => (
               </Link>
             </div>
             <div className='mb-1rem'>
-              <Link to='/programs/summer-programs'>
+              <Link to='/programs/summer-winter-programs'>
                 {data.contentfulNavigationLinks.summerProgramKorean}
               </Link>
             </div>
             <div className='mb-1rem'>
-              <Link to='/programs/winter-programs'>
+              <Link to='/programs/summer-winter-programs/#winter-program'>
                 {data.contentfulNavigationLinks.winterProgramKorean}
               </Link>
             </div>
