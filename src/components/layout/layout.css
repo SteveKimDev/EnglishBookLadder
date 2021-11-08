@@ -42,16 +42,20 @@ a:hover {
   margin-right: auto;
 }
 
+.mb-05rem {
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-1rem {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .mb-2rem {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .mb-3rem {
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 /* Carousel Css */

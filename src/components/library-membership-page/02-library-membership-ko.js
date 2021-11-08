@@ -19,7 +19,7 @@ const LibraryMembershipSection = () => (
       }
     `}
     render={(data) => (
-      <section className='section-blue-background'>
+      <section className='section-blue-background last-section'>
         <h2 className='section-title text-center'>
           {
             data.allContentfulLibraryMembershipPageAssembly.nodes[0]
