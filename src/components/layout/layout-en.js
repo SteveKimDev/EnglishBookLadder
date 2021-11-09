@@ -1,4 +1,5 @@
 import * as React from 'react';
+import SSRProvider from 'react-bootstrap/SSRProvider';
 
 import Header from './header-en';
 import Footer from './footer-en';
@@ -8,11 +9,11 @@ import './layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <SSRProvider>
       <Header />
       <main>{children}</main>
       <Footer />
-    </>
+    </SSRProvider>
   );
 };
 
