@@ -1,11 +1,17 @@
 import * as React from 'react';
-import About from '../components/about/about-ko';
 import Layout from '../components/layout/layout-ko';
+import HeroSection from '../components/about-ebl-page/01-hero-ko';
+import OurPhilosophySection from '../components/about-ebl-page/02-our-philosophy-ko';
+import OurEnglishLibrarySection from '../components/about-ebl-page/03-our-english-library-ko';
+import WhyEnglishLibrarySection from '../components/about-ebl-page/04-why-english-library-ko';
 
 const AboutEbl = () => (
   <div id='about-page'>
     <Layout>
-      <About />
+      <HeroSection />
+      <OurPhilosophySection />
+      <OurEnglishLibrarySection />
+      <WhyEnglishLibrarySection />
     </Layout>
   </div>
 );

@@ -2,6 +2,10 @@
   width: 515px;
 }
 
+.about-ebl-hero-title {
+  width: 430px;
+}
+
 @media (min-width: 1200px) and (max-width: 1439px) {
   .summer-winter-hero-title {
     font-size: 4.5rem;
@@ -15,7 +19,8 @@
 }
 
 @media (max-width: 991px) {
-  .summer-winter-hero-title {
+  .summer-winter-hero-title,
+  .about-ebl-hero-title {
     width: 100%;
   }
 }
