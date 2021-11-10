@@ -1,0 +1,27 @@
+.hero-title {
+  width: 650px;
+}
+
+.details-richtext hr {
+  margin: 2rem auto;
+  background-color: #86a0c6;
+  height: 3px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-title {
+    width: 455px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}

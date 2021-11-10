@@ -66,7 +66,7 @@ const Header = () => (
         </div>
         <div className='hidden'>
           <Link to='/common-q-and-a' className='header-link'>
-            {data.contentfulNavigationLinks.qandaPageKorean}
+            {data.contentfulNavigationLinks.qandAPageKorean}
           </Link>
         </div>
         <div className='hidden'>
