@@ -108,7 +108,10 @@ const ProgramSection = () => (
                   .programShortDescriptionEnglish.programShortDescriptionEnglish
               }
             </p>
-            <Link to='/en/programs/about-ebl' className={`cta-btn btn-center`}>
+            <Link
+              to='/en/programs/young-readers'
+              className={`cta-btn btn-center`}
+            >
               Learn More
             </Link>
           </Col>
@@ -184,7 +187,7 @@ const ProgramSection = () => (
               }
             </p>
             <Link
-              to='/en/programs/summer-programs'
+              to='/en/programs/summer-winter-programs'
               className={`cta-btn btn-center`}
             >
               Learn More
@@ -210,7 +213,7 @@ const ProgramSection = () => (
               }
             </p>
             <Link
-              to='/en/programs/winter-programs'
+              to='/en/programs/summer-winter-programs/#winter-program'
               className={`cta-btn btn-center`}
             >
               Learn More

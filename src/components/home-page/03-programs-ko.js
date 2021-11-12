@@ -108,7 +108,7 @@ const ProgramSection = () => (
                   .programShortDescriptionKorean.programShortDescriptionKorean
               }
             </p>
-            <Link to='/programs/about-ebl' className={`cta-btn btn-center`}>
+            <Link to='/programs/young-readers' className={`cta-btn btn-center`}>
               더 알아보기
             </Link>
           </Col>
@@ -181,7 +181,7 @@ const ProgramSection = () => (
               }
             </p>
             <Link
-              to='/programs/summer-programs'
+              to='/programs/summer-winter-programs'
               className={`cta-btn btn-center`}
             >
               더 알아보기
@@ -207,7 +207,7 @@ const ProgramSection = () => (
               }
             </p>
             <Link
-              to='/programs/winter-programs'
+              to='/programs/summer-winter-programs/#winter-program'
               className={`cta-btn btn-center`}
             >
               더 알아보기
