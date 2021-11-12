@@ -6,6 +6,16 @@
   width: 430px;
 }
 
+.summer-winter-richtext ol,
+.summer-winter-richtext ul {
+  margin-top: -1rem;
+}
+
+.summer-winter-richtext ol li p,
+.summer-winter-richtext ul li p {
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 1200px) and (max-width: 1439px) {
   .summer-winter-hero-title {
     font-size: 4.5rem;
