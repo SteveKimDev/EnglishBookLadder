@@ -32,6 +32,13 @@ const MorningClassSection = () => (
                 classDescriptionKorean
               }
             }
+            class6 {
+              classTitleKorean
+              classScheduleKorean
+              classDescriptionKorean {
+                classDescriptionKorean
+              }
+            }
           }
         }
       }
@@ -108,6 +115,26 @@ const MorningClassSection = () => (
           <p>
             {
               data.allContentfulAdultClassesPageAssembly.nodes[0].class3
+                .classDescriptionKorean.classDescriptionKorean
+            }
+          </p>
+        </div>
+        <div className={`mb-2rem`}>
+          <h3 className={`section-subtitle  mb-05rem`}>
+            {
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
+                .classTitleKorean
+            }
+          </h3>
+          <p className={`mb-05rem`}>
+            {
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
+                .classScheduleKorean
+            }
+          </p>
+          <p>
+            {
+              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
                 .classDescriptionKorean.classDescriptionKorean
             }
           </p>
