@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Seo from '../components/seo';
 import Layout from '../components/layout/layout-ko';
 import HeroSection from '../components/about-ebl-page/01-hero-ko';
 import OurPhilosophySection from '../components/about-ebl-page/02-our-philosophy-ko';
@@ -9,6 +10,7 @@ import ExtenVsIntenReadingSection from '../components/about-ebl-page/05-extensiv
 const AboutEbl = () => (
   <div id='about-page'>
     <Layout>
+      <Seo title='EBL에 대해' />
       <HeroSection />
       <OurPhilosophySection />
       <OurEnglishLibrarySection />

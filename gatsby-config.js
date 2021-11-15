@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: 'https://englishbookladder.com',
     title: 'English Book Ladder',
     description:
-      'Since January of 2009, we have been helping children and adults learn the English language in Jeongja-dong, Bundang.',
+      '2009년 1월부터 분당 정자동에서 아이들과 어른들이 영어를 배울 수 있도록 돕고 있습니다. 우리의 철학은 영어 교육이 재미 있고 평생 학습되는 발전이라는 것입니다.',
     author: '@stevekimdev',
   },
   plugins: [

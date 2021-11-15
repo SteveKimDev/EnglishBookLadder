@@ -9,7 +9,7 @@ import LibrarySection from '../components/home-page/04-library-en';
 const HomePage = () => (
   <div id='home-page'>
     <Layout>
-      <Seo title='Home Page' />
+      <Seo title='An Interactive Library' />
       <HeroSection />
       <AboutSection />
       <ProgramSection />

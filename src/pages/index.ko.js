@@ -9,7 +9,7 @@ import LibrarySection from '../components/home-page/04-library-ko';
 const HomePage = () => (
   <div id='home-page'>
     <Layout>
-      <Seo title='Home Page' />
+      <Seo title='대화형 라이브러리' />
       <HeroSection />
       <AboutSection />
       <ProgramSection />
