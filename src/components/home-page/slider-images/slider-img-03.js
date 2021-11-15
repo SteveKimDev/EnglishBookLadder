@@ -19,7 +19,7 @@ const SliderImgThree = () => (
     `}
     render={(data) => (
       <Img
-        alt='EBL Slider Image'
+        alt='English Book Ladder Slider Image'
         style={{ borderRadius: '5px' }}
         className={`${HomeStyle.sliderImg}`}
         fluid={data.contentfulHomePageAssembly.slider3.fluid}

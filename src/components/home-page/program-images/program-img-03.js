@@ -21,7 +21,7 @@ const ProgramImgThree = () => (
     `}
     render={(data) => (
       <Img
-        alt='EBL Program Image'
+        alt='English Book Ladder Program Image'
         style={{ borderRadius: '5px' }}
         className={`${HomeStyle.programCardImg}`}
         fluid={
