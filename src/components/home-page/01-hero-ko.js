@@ -11,9 +11,11 @@ const HeroSection = () => (
       query HomePageHeroKorean {
         allContentfulHomePageAssembly {
           nodes {
-            heroTitleKorean
-            heroDescriptionKorean {
-              heroDescriptionKorean
+            heroAssembly {
+              heroTitleKorean
+              heroDescriptionKorean {
+                heroDescriptionKorean
+              }
             }
           }
         }
@@ -25,11 +27,14 @@ const HeroSection = () => (
           <Col lg={4} className={`order-last order-lg-first`}>
             <div className={`hero-copy`}>
               <h1 className={`hero-title`}>
-                {data.allContentfulHomePageAssembly.nodes[0].heroTitleKorean}
+                {
+                  data.allContentfulHomePageAssembly.nodes[0].heroAssembly
+                    .heroTitleKorean
+                }
               </h1>
               <p className={`hero-description`}>
                 {
-                  data.allContentfulHomePageAssembly.nodes[0]
+                  data.allContentfulHomePageAssembly.nodes[0].heroAssembly
                     .heroDescriptionKorean.heroDescriptionKorean
                 }
               </p>
