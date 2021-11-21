@@ -24,7 +24,7 @@ const HeroSection = () => (
     render={(data) => (
       <section className={`section-hero`}>
         <Row>
-          <Col lg={4} className={`order-last order-lg-first`}>
+          <Col lg={5} className={`order-last order-lg-first`}>
             <div className={`hero-copy`}>
               <h1 className={`hero-title`}>
                 {
@@ -45,7 +45,7 @@ const HeroSection = () => (
               </div>
             </div>
           </Col>
-          <Col lg={8} className={`order-first order-lg-last`}>
+          <Col lg={7} className={`order-first order-lg-last`}>
             <HeroSVG />
           </Col>
         </Row>
