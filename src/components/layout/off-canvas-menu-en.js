@@ -35,6 +35,15 @@ function OffCanvasMenu({ name, ...props }) {
                 {offcanvaslinks.homePageLinkEnglish}
               </Link>
             </div>
+            <div>
+              <Link
+                to='/en/about-ebl'
+                className='header-link offcanvas-link'
+                onClick={handleClose}
+              >
+                {offcanvaslinks.aboutPageEnglish}
+              </Link>
+            </div>
 
             {/* Accordion Menu */}
             <div>
@@ -104,15 +113,6 @@ function OffCanvasMenu({ name, ...props }) {
             </div>
             {/* End Accordion Menu */}
 
-            <div>
-              <Link
-                to='/en/about-ebl'
-                className='header-link offcanvas-link'
-                onClick={handleClose}
-              >
-                {offcanvaslinks.aboutPageEnglish}
-              </Link>
-            </div>
             <div>
               <Link
                 to='/en/common-q-and-a'

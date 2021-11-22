@@ -33,6 +33,11 @@ const Header = () => (
             {data.contentfulNavigationLinks.homePageLinkEnglish}
           </Link>
         </div>
+        <div className='hidden'>
+          <Link to='/en/about-ebl' className='header-link'>
+            {data.contentfulNavigationLinks.aboutPageEnglish}
+          </Link>
+        </div>
 
         {/* Dropdown Menu */}
         <div className='hidden'>
@@ -59,11 +64,6 @@ const Header = () => (
         </div>
         {/* End Dropdown Menu */}
 
-        <div className='hidden'>
-          <Link to='/en/about-ebl' className='header-link'>
-            {data.contentfulNavigationLinks.aboutPageEnglish}
-          </Link>
-        </div>
         <div className='hidden'>
           <Link to='/en/common-q-and-a' className='header-link'>
             {data.contentfulNavigationLinks.qandAPageEnglish}
