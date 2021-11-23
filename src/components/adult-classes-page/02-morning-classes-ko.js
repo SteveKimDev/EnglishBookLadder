@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
 const MorningClassSection = () => (
   <StaticQuery
@@ -13,30 +14,26 @@ const MorningClassSection = () => (
             }
             class1 {
               classTitleKorean
-              classScheduleKorean
-              classDescriptionKorean {
-                classDescriptionKorean
+              classDetailsKorean {
+                raw
               }
             }
             class2 {
               classTitleKorean
-              classScheduleKorean
-              classDescriptionKorean {
-                classDescriptionKorean
+              classDetailsKorean {
+                raw
               }
             }
             class3 {
               classTitleKorean
-              classScheduleKorean
-              classDescriptionKorean {
-                classDescriptionKorean
+              classDetailsKorean {
+                raw
               }
             }
             class6 {
               classTitleKorean
-              classScheduleKorean
-              classDescriptionKorean {
-                classDescriptionKorean
+              classDetailsKorean {
+                raw
               }
             }
           }
@@ -66,18 +63,12 @@ const MorningClassSection = () => (
                 .classTitleKorean
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+          <div>
+            {renderRichText(
               data.allContentfulAdultClassesPageAssembly.nodes[0].class1
-                .classScheduleKorean
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
-                .classDescriptionKorean.classDescriptionKorean
-            }
-          </p>
+                .classDetailsKorean
+            )}
+          </div>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
@@ -86,18 +77,12 @@ const MorningClassSection = () => (
                 .classTitleKorean
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+          <div>
+            {renderRichText(
               data.allContentfulAdultClassesPageAssembly.nodes[0].class2
-                .classScheduleKorean
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
-                .classDescriptionKorean.classDescriptionKorean
-            }
-          </p>
+                .classDetailsKorean
+            )}
+          </div>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
@@ -106,18 +91,12 @@ const MorningClassSection = () => (
                 .classTitleKorean
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+          <div>
+            {renderRichText(
               data.allContentfulAdultClassesPageAssembly.nodes[0].class3
-                .classScheduleKorean
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
-                .classDescriptionKorean.classDescriptionKorean
-            }
-          </p>
+                .classDetailsKorean
+            )}
+          </div>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
@@ -126,18 +105,12 @@ const MorningClassSection = () => (
                 .classTitleKorean
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+          <div>
+            {renderRichText(
               data.allContentfulAdultClassesPageAssembly.nodes[0].class6
-                .classScheduleKorean
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
-                .classDescriptionKorean.classDescriptionKorean
-            }
-          </p>
+                .classDetailsKorean
+            )}
+          </div>
         </div>
       </section>
     )}

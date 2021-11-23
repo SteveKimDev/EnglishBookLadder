@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
 const ClassSection = () => (
   <StaticQuery
@@ -13,23 +14,20 @@ const ClassSection = () => (
             }
             class1 {
               classTitleEnglish
-              classScheduleEnglish
-              classDescriptionEnglish {
-                classDescriptionEnglish
+              classDetailsEnglish {
+                raw
               }
             }
             class2 {
               classTitleEnglish
-              classScheduleEnglish
-              classDescriptionEnglish {
-                classDescriptionEnglish
+              classDetailsEnglish {
+                raw
               }
             }
             class3 {
               classTitleEnglish
-              classScheduleEnglish
-              classDescriptionEnglish {
-                classDescriptionEnglish
+              classDetailsEnglish {
+                raw
               }
             }
           }
@@ -59,18 +57,12 @@ const ClassSection = () => (
                 .classTitleEnglish
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+          <div>
+            {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class1
-                .classScheduleEnglish
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
-                .classDescriptionEnglish.classDescriptionEnglish
-            }
-          </p>
+                .classDetailsEnglish
+            )}
+          </div>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
@@ -79,18 +71,13 @@ const ClassSection = () => (
                 .classTitleEnglish
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+
+          <div>
+            {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class2
-                .classScheduleEnglish
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
-                .classDescriptionEnglish.classDescriptionEnglish
-            }
-          </p>
+                .classDetailsEnglish
+            )}
+          </div>
         </div>
         <div className={`mb-2rem`}>
           <h3 className={`section-subtitle  mb-05rem`}>
@@ -99,18 +86,13 @@ const ClassSection = () => (
                 .classTitleEnglish
             }
           </h3>
-          <p className={`mb-05rem`}>
-            {
+
+          <div>
+            {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class3
-                .classScheduleEnglish
-            }
-          </p>
-          <p>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
-                .classDescriptionEnglish.classDescriptionEnglish
-            }
-          </p>
+                .classDetailsEnglish
+            )}
+          </div>
         </div>
       </section>
     )}
