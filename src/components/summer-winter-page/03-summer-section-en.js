@@ -28,7 +28,7 @@ const SummerProgramSection = () => (
             }
           </h2>
         </div>
-        <div className={`mb-2rem ${ProgramStyle.summerWinterRichtext}`}>
+        <div className={`${ProgramStyle.classRichtext}`}>
           {renderRichText(
             data.allContentfulSummerWinterProgramsPageAssembly.nodes[0]
               .summerProgramDetailsEnglish
