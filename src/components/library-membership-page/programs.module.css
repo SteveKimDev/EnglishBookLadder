@@ -6,6 +6,11 @@
   width: 430px;
 }
 
+.class-richtext ol,
+.class-richtext ul {
+  line-height: 0.5rem;
+}
+
 .summer-winter-richtext ol,
 .summer-winter-richtext ul {
   margin-top: -1rem;

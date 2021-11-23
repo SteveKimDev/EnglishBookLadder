@@ -2,6 +2,8 @@ import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
+import * as ProgramStyle from '../library-membership-page/programs.module.css';
+
 const EveningClassSection = () => (
   <StaticQuery
     query={graphql`
@@ -39,13 +41,13 @@ const EveningClassSection = () => (
           </p>
         </div>
         <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle  mb-05rem`}>
+          <h3 className={`section-subtitle`}>
             {
               data.allContentfulAdultClassesPageAssembly.nodes[0].class4
                 .classTitleKorean
             }
           </h3>
-          <div>
+          <div className={`${ProgramStyle.classRichtext}`}>
             {renderRichText(
               data.allContentfulAdultClassesPageAssembly.nodes[0].class4
                 .classDetailsKorean

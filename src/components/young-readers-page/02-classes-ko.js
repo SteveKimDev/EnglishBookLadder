@@ -2,6 +2,8 @@ import * as React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
+import * as ProgramStyle from '../library-membership-page/programs.module.css';
+
 const ClassSection = () => (
   <StaticQuery
     query={graphql`
@@ -51,13 +53,13 @@ const ClassSection = () => (
           </p>
         </div>
         <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle  mb-05rem`}>
+          <h3 className={`section-subtitle`}>
             {
               data.allContentfulYoungReadersPageAssembly.nodes[0].class1
                 .classTitleKorean
             }
           </h3>
-          <div>
+          <div className={`${ProgramStyle.classRichtext}`}>
             {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class1
                 .classDetailsKorean
@@ -65,14 +67,14 @@ const ClassSection = () => (
           </div>
         </div>
         <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle  mb-05rem`}>
+          <h3 className={`section-subtitle`}>
             {
               data.allContentfulYoungReadersPageAssembly.nodes[0].class2
                 .classTitleKorean
             }
           </h3>
 
-          <div>
+          <div className={`${ProgramStyle.classRichtext}`}>
             {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class2
                 .classDetailsKorean
@@ -80,14 +82,14 @@ const ClassSection = () => (
           </div>
         </div>
         <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle  mb-05rem`}>
+          <h3 className={`section-subtitle`}>
             {
               data.allContentfulYoungReadersPageAssembly.nodes[0].class3
                 .classTitleKorean
             }
           </h3>
 
-          <div>
+          <div className={`${ProgramStyle.classRichtext}`}>
             {renderRichText(
               data.allContentfulYoungReadersPageAssembly.nodes[0].class3
                 .classDetailsKorean
