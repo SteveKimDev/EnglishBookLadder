@@ -54,7 +54,7 @@ const Footer = () => (
             </div>
             <div className='mb-1rem'>
               <Link to='/common-q-and-a'>
-                {data.contentfulNavigationLinks.qandaPageKorean}
+                {data.contentfulNavigationLinks.qandAPageKorean}
               </Link>
             </div>
             <div className='mb-1rem'>
