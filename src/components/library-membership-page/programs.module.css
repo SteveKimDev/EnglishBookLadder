@@ -6,6 +6,11 @@
   width: 430px;
 }
 
+.class-richtext h3 {
+  color: #86a0c6;
+  margin-top: 2rem;
+}
+
 .class-richtext ol,
 .class-richtext ul {
   line-height: 0.5rem;

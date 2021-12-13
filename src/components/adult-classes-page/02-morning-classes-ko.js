@@ -14,29 +14,8 @@ const MorningClassSection = () => (
             morningClassDescriptionKorean {
               morningClassDescriptionKorean
             }
-            class1 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
-            class2 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
-            class3 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
-            class6 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
+            morningClassesKorean {
+              raw
             }
           }
         }
@@ -51,68 +30,18 @@ const MorningClassSection = () => (
                 .morningClassTitleKorean
             }
           </h2>
-          <p>
+          <p className={`text-center`}>
             {
               data.allContentfulAdultClassesPageAssembly.nodes[0]
                 .morningClassDescriptionKorean.morningClassDescriptionKorean
             }
           </p>
         </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class1
-                .classDetailsKorean
-            )}
-          </div>
-        </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class2
-                .classDetailsKorean
-            )}
-          </div>
-        </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class3
-                .classDetailsKorean
-            )}
-          </div>
-        </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class6
-                .classDetailsKorean
-            )}
-          </div>
+        <div className={`${ProgramStyle.classRichtext}`}>
+          {renderRichText(
+            data.allContentfulAdultClassesPageAssembly.nodes[0]
+              .morningClassesKorean
+          )}
         </div>
       </section>
     )}

@@ -20,6 +20,9 @@ const PrivateClassSection = () => (
                 raw
               }
             }
+            privateClassesEnglish {
+              raw
+            }
           }
         }
       }
@@ -36,26 +39,18 @@ const PrivateClassSection = () => (
                 .privateClassTitleEnglish
             }
           </h2>
-          <p>
+          <p className={`text-center`}>
             {
               data.allContentfulAdultClassesPageAssembly.nodes[0]
-                .privateClassDescriptionEnglish.morningClassDescriptionEnglish
+                .privateClassDescriptionEnglish.privateClassDescriptionEnglish
             }
           </p>
         </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class5
-                .classTitleEnglish
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class5
-                .classDetailsEnglish
-            )}
-          </div>
+        <div className={`${ProgramStyle.classRichtext}`}>
+          {renderRichText(
+            data.allContentfulAdultClassesPageAssembly.nodes[0]
+              .privateClassesEnglish
+          )}
         </div>
       </section>
     )}

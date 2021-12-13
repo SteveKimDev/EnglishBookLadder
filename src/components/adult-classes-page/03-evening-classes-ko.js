@@ -20,6 +20,9 @@ const EveningClassSection = () => (
                 raw
               }
             }
+            eveningClassesKorean {
+              raw
+            }
           }
         }
       }
@@ -33,26 +36,18 @@ const EveningClassSection = () => (
                 .eveningClassTitleKorean
             }
           </h2>
-          <p>
+          <p className={`text-center`}>
             {
               data.allContentfulAdultClassesPageAssembly.nodes[0]
-                .eveningClassDescriptionKorean.morningClassDescriptionKorean
+                .eveningClassDescriptionKorean.eveningClassDescriptionKorean
             }
           </p>
         </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class4
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulAdultClassesPageAssembly.nodes[0].class4
-                .classDetailsKorean
-            )}
-          </div>
+        <div className={`${ProgramStyle.classRichtext}`}>
+          {renderRichText(
+            data.allContentfulAdultClassesPageAssembly.nodes[0]
+              .eveningClassesKorean
+          )}
         </div>
       </section>
     )}

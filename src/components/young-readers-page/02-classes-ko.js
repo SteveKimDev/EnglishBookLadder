@@ -32,6 +32,9 @@ const ClassSection = () => (
                 raw
               }
             }
+            youngReadersClassesKorean {
+              raw
+            }
           }
         }
       }
@@ -45,56 +48,18 @@ const ClassSection = () => (
                 .youngReadersTitleKorean
             }
           </h2>
-          <p>
+          <p className={`text-center`}>
             {
               data.allContentfulYoungReadersPageAssembly.nodes[0]
                 .youngReadersDescriptionKorean.youngReadersDescriptionKorean
             }
           </p>
         </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
-                .classTitleKorean
-            }
-          </h3>
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class1
-                .classDetailsKorean
-            )}
-          </div>
-        </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
-                .classTitleKorean
-            }
-          </h3>
-
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class2
-                .classDetailsKorean
-            )}
-          </div>
-        </div>
-        <div className={`mb-2rem`}>
-          <h3 className={`section-subtitle`}>
-            {
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
-                .classTitleKorean
-            }
-          </h3>
-
-          <div className={`${ProgramStyle.classRichtext}`}>
-            {renderRichText(
-              data.allContentfulYoungReadersPageAssembly.nodes[0].class3
-                .classDetailsKorean
-            )}
-          </div>
+        <div className={`${ProgramStyle.classRichtext}`}>
+          {renderRichText(
+            data.allContentfulYoungReadersPageAssembly.nodes[0]
+              .youngReadersClassesKorean
+          )}
         </div>
       </section>
     )}
