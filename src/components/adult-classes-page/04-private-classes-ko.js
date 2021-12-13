@@ -14,12 +14,6 @@ const PrivateClassSection = () => (
             privateClassDescriptionKorean {
               privateClassDescriptionKorean
             }
-            class5 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
             privateClassesKorean {
               raw
             }

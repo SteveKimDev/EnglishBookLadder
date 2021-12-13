@@ -14,24 +14,6 @@ const ClassSection = () => (
             youngReadersDescriptionKorean {
               youngReadersDescriptionKorean
             }
-            class1 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
-            class2 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
-            class3 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
             youngReadersClassesKorean {
               raw
             }

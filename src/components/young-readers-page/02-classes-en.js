@@ -14,24 +14,6 @@ const ClassSection = () => (
             youngReadersDescriptionEnglish {
               youngReadersDescriptionEnglish
             }
-            class1 {
-              classTitleEnglish
-              classDetailsEnglish {
-                raw
-              }
-            }
-            class2 {
-              classTitleEnglish
-              classDetailsEnglish {
-                raw
-              }
-            }
-            class3 {
-              classTitleEnglish
-              classDetailsEnglish {
-                raw
-              }
-            }
             youngReadersClassesEnglish {
               raw
             }

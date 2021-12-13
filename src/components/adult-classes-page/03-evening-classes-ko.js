@@ -14,12 +14,6 @@ const EveningClassSection = () => (
             eveningClassDescriptionKorean {
               eveningClassDescriptionKorean
             }
-            class4 {
-              classTitleKorean
-              classDetailsKorean {
-                raw
-              }
-            }
             eveningClassesKorean {
               raw
             }
