@@ -42,7 +42,7 @@ const HeroSection = () => (
               </p>
               <div>
                 <a href='tel:03180225010' className={`cta-btn-shadow`}>
-                  Call Us <PhoneSVG className={`cta-phone-icon`} />
+                  전화주세요 <PhoneSVG className={`cta-phone-icon`} />
                 </a>
               </div>
             </div>
