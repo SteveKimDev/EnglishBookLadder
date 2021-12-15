@@ -31,7 +31,9 @@ const WinterProgramSection = () => (
             }
           </h2>
         </div>
-        <div className={`${ProgramStyle.classRichtext}`}>
+        <div
+          className={`${ProgramStyle.classRichtext} ${ProgramStyle.summerWinterRichtext}`}
+        >
           {renderRichText(
             data.allContentfulSummerWinterProgramsPageAssembly.nodes[0]
               .winterProgramDetailsEnglish
