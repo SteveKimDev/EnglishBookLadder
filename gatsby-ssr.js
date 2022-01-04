@@ -35,4 +35,7 @@ export const onRenderBody = ({ setPostBodyComponents, setHeadComponents }) => {
       crossOrigin='anonymous'
     />,
   ]);
+  setHeadComponents([
+    <meta key='5' name='naver-site-verification' content='' />,
+  ]);
 };
