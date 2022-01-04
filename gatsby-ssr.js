@@ -36,6 +36,10 @@ export const onRenderBody = ({ setPostBodyComponents, setHeadComponents }) => {
     />,
   ]);
   setHeadComponents([
-    <meta key='5' name='naver-site-verification' content='' />,
+    <meta
+      key='5'
+      name='naver-site-verification'
+      content='974328cbc2d39bc0298b81d7bd0ea9eb2b409c1e'
+    />,
   ]);
 };
