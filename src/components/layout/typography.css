@@ -1,4 +1,15 @@
 @font-face {
   font-family: 'Eurostile Extended';
-  src: url('../../fonts/eurostile-extended.ttf');
+  src: url('../../fonts/eurostile-extended-roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eurostile Extended';
+  src: url('../../fonts/eurostile-extended-roman_1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
